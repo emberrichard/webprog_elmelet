@@ -1,8 +1,9 @@
 header {
     border-radius: 10px;
     background-color: yellow;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
+    overflow: hidden;
 }
 
 header img {
@@ -17,13 +18,14 @@ div#wrapper {
     margin: 10px;
 }
 
+
 aside {
     display: table-cell;
     vertical-align: top;
 }
 
 nav {
-    margin: 0px 0px 10px 0px;
+    margin: 10px;
     border-radius: 10px;
     background-color: #FF6600;
 }
@@ -33,12 +35,17 @@ nav ul {
     margin: 0px;
     padding: 10px;
     display: flex; 
-    flex-direction: row;
-    justify-content: flex-start;
+   flex-wrap: wrap;
+   justify-content: center; /* Ez helyezi középre a csoportot */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 nav ul li {
-    padding: 0px 20px;
+    transition: background 0.3s;
 }
 
 nav ul li.active {
@@ -58,6 +65,13 @@ div#content {
     background-color: #99FFCC;
     padding: 15px;
 }
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
 
 div#content img{
     float: right;
@@ -73,4 +87,5 @@ footer {
     margin: 10px;
     padding: 5px 20px;
     background-color: #CC99FF;
+    text-align: center;
 }
