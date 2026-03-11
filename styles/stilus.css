@@ -20,8 +20,7 @@ aside {
 }
 
 nav {
-    margin: 0px 10px 0px 0px;
-    top: 0px;
+    margin: 0px 0px 10px 0px;
     border-radius: 10px;
     background-color: #FF6600;
 }
@@ -29,15 +28,19 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0px;
-    padding: 15px 0px;
+    padding: 10px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 nav ul li {
-    padding: 0px 15px;;
+    padding: 0px 20px;
 }
 
 nav ul li.active {
-    border-right: 5px solid blue;
+     border-right: none; 
+    border-bottom: 5px solid blue;
 }
 
 nav ul a {
