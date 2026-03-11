@@ -1,18 +1,26 @@
 header {
     border-radius: 10px;
-    background-color: yellow;
-    padding: 10px;
+    background-color: #0F172A;
+    padding: 15px;
     margin: 10px;
+    overflow: hidden;
+    color: #F8FAFC;
+
+    
 }
 
 header img {
     float: left;
     margin: 20px 10px 0px 10px;
+
+
+    /*teszt commithoz módosítás mert öszekeverte a github fiókjaimat*/ 
 }
 
 div#wrapper {
     margin: 10px;
 }
+
 
 aside {
     display: table-cell;
@@ -20,29 +28,37 @@ aside {
 }
 
 nav {
-    margin: 0px 10px 0px 0px;
-    top: 0px;
+    margin: 10px;
     border-radius: 10px;
-    background-color: #FF6600;
+    background-color: #1E293B;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0px;
-    padding: 15px 0px;
+    padding: 10px;
+    display: flex; 
+   flex-wrap: wrap;
+   justify-content: center; /* Ez helyezi középre a csoportot */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 nav ul li {
-    padding: 0px 15px;;
+    display: block;
+    padding-bottom: 5px;
 }
 
 nav ul li.active {
-    border-right: 5px solid blue;
+     border-bottom: 5px solid #0EA5E9!important;
 }
 
 nav ul a {
     text-decoration: none;
-    color: blue;
+    color: #F8FAFC;
 }
 
 div#content {
@@ -52,6 +68,14 @@ div#content {
     background-color: #99FFCC;
     padding: 15px;
 }
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #F8FAFC;
+    font-weight: bold;
+}
+
 
 div#content img{
     float: right;
@@ -66,5 +90,7 @@ footer {
     border-radius: 10px;
     margin: 10px;
     padding: 5px 20px;
-    background-color: #CC99FF;
+    background-color: #1E293B;
+    color: #F8FAFC;
+    text-align: center;
 }
